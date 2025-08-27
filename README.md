@@ -4,6 +4,35 @@ An implementation of a Deep Recurrent Gated Neural Network for dynamic audio den
 
 ---
 
+## What This Repository Does For You
+
+This Audio Denoising RNN repository helps you remove unwanted noise from audio files using artificial intelligence. Here's what it specifically does for you:
+
+### Core Functionality
+- **Noise Removal**: Takes noisy audio files (like recordings with background hum, traffic, or static) and produces cleaner versions
+- **AI-Powered**: Uses a Recurrent Neural Network (RNN) with Gated Recurrent Units (GRUs) to intelligently distinguish between speech/music and noise
+
+### Practical Applications
+1. **Voice Recording Enhancement**: Clean up podcast recordings, voice memos, or interview audio
+2. **Historical Audio Restoration**: Improve old recordings or tapes with background noise
+3. **Video Conferencing**: Reduce fan noise, keyboard typing, or street sounds from remote meeting recordings
+4. **Music Production**: Remove unwanted artifacts from live recordings
+5. **Research/Data Preparation**: Clean audio data for speech recognition or analysis projects
+
+### Technical Benefits
+- **Spectral Processing**: Works in the frequency domain for more precise noise identification
+- **Sequence Learning**: Uses RNNs to understand temporal patterns in audio (knows what comes next)
+- **Customizable**: You can train it on specific types of noise you commonly encounter
+
+### What You Get
+- A ready-to-use denoising tool that works immediately with the provided test setup
+- Complete training pipeline if you want to improve results for your specific noise types
+- Educational example of deep learning applied to audio signal processing
+
+Essentially, it's like having a smart "audio cleaner" that can automatically remove background noise while preserving the important content of your recordings.
+
+---
+
 ## 1. Project Overview
 
 This project tackles the classic problem of audio denoising, which is the task of removing unwanted noise from an audio signal. The approach is based on the concept of **dynamic spectral subtraction**, where a neural network learns to estimate a spectral mask or, more directly, the clean audio spectrum itself. This mask, when applied to the noisy signal's spectrum, suppresses the noise components and enhances the clean signal components. We will implement a **Deep Recurrent Gated Neural Network** (like an LSTM or GRU) to perform this signal reconstruction, as mentioned in the project description.
