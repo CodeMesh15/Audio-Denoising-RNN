@@ -61,5 +61,3 @@ This project tackles the classic problem of audio denoising, which is the task o
     -   Save the resulting denoised audio as a `.wav` file.
 
 ---
-
-## 4. Project Structure
